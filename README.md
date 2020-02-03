@@ -35,9 +35,9 @@ Principalmente los siguientes aspectos:
 
 1. **Diseño y maquetación:** El proyecto debe parecerse lo máximo posible al siguiente diseño:
 
-   ![Diseño y maquetación](https://cdn.dribbble.com/users/192407/screenshots/6408843/employees4_2x.png)
+   ![Diseño y maquetación](https://github.com/imayo/prueba-dixper-front/blob/master/home.png?raw=true)
 
-   ![Diseño y maquetación](https://cdn.dribbble.com/users/192407/screenshots/6408843/employees4_2x.png)
+   ![Diseño y maquetación](https://github.com/imayo/prueba-dixper-front/blob/master/profile.png?raw=true)
 
 2. **Funcionalidad:** La aplicación debe cumplir con los siguientes requisitos:
 
