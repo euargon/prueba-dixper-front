@@ -24,7 +24,7 @@ Principalmente los siguientes aspectos:
    - Clonar el fork a tu máquina local.
    - Crear un `branch` en tu cuenta de GitHub utilizando tu nombre completo.
 6. **Al finalizar**, existen 2 opciones para entregar tu proyecto:
-   - 1. Realizar un `Commit` de tu proyecto, **enviar un `Pull Request` al branch con tu NOMBRE**, y nos a la siguiente dirección de correo electrónico [hello@dixper.io](mailto:hello@dixper.io).
+   - 1. Realizar un `Commit` de tu proyecto, **enviar un `Pull Request` al branch con tu NOMBRE**, y nos la envías a la siguiente dirección de correo electrónico [hello@dixper.io](mailto:hello@dixper.io).
    - 2. Crear un archivo comprimido (_.zip_ o _.rar_) de tu proyecto y enviar a la siguiente dirección de correo electrónico [hello@dixper.io](mailto:hello@dixper.io).
 
 ## EJERCICIO PRÁCTICO
