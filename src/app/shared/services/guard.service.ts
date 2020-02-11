@@ -28,7 +28,7 @@ export class ScoreGuard implements CanActivate {
 
         if (this.currentUser && this.currentUser !== undefined) {
             console.log(this.currentUser);
-            if (this.currentUser.score < 30) {
+            if (this.currentUser.score < 0) {
                 const error = this.translateService.instant('error-messages.points');
                 this.alertManagementService.viewAlert(error);
                 this.router.navigate(['']);
