@@ -1,0 +1,22 @@
+{
+    "created": "Created at ",
+    "error-messages": {
+        "details": "There was a problem trying to get user's details",
+        "points": "You cannot visit profiles from users with less than 30 points",
+        "repos": "There was a problem trying to get user's repositories",
+        "search": "There was a problem trying to get users",
+        "search-limit": "You must write, at least, 3 characters in the search field"
+    },
+    "followers": "Followers: ",
+    "following": "Following: ",
+    "forks": "Forks",
+    "full-profile": "Full profile",
+    "id": "id: ",
+    "issues": "Open issues",
+    "no-users": "No users found!",
+    "ok": "Accept",
+    "profile": "Profile list",
+    "search": "Search", 
+    "search-profile": "Search profile...", 
+    "size": "Size"
+}
