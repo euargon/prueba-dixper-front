@@ -1,0 +1,100 @@
+@import 'src/app/themes/variables.scss';
+.main-container {
+    margin-top: 64px;
+    padding: 8px;
+    min-height: 300px;
+    max-height: 500px;
+    border-radius: 6px;
+    box-shadow: 0px 0px 30px 12px rgba(204,204,204,0.89);
+    overflow: hidden;
+    .main-content {
+        padding: 8px;
+        min-height: 284px;
+        max-height: 484px;
+        overflow-y: auto;
+        overflow-x: hidden;
+        .search-form {
+            width: 100%;
+            .search-bar {
+                .input-field {
+                    .search {
+                        font-family: FontAwesome, Arial, Helvetica, sans-serif;
+                        font-style: normal;
+                        font-weight: normal;
+                        text-decoration: inherit;
+                        border: none;
+                        border-radius: 6px;
+                        background: $light-grey;
+                    }
+                }
+                .button-zone {
+                    padding: 0;
+                    .search-button {
+                        color: $white;
+                        background: $orange-red;
+                        border-radius: 6px;
+                    }
+                }
+            }
+        }
+        .profile-title {
+            margin-top: 16px;
+            font-size: 18px;
+        }
+        .users {
+            .user-container {
+                border-radius: 6px;
+                background: linear-gradient(180deg, transparent, $light-grey);
+                margin-bottom: 32px;
+                .user-img {
+                    filter: blur(1px);
+                    max-width: 100%;
+                    position: relative;
+                    z-index: -1;
+                    border-top-right-radius: 6px;
+                    border-top-left-radius: 6px;
+                }
+                .text-zone {
+                    padding: 8px;
+                    .user-info {
+                        display: flex;
+                        flex-direction: column;
+                        align-items: center;
+                        .user-login {
+                            font-size: 24px;
+                            margin: 0;
+                        }
+                        .user-id {
+                            color: $dark-grey;
+                            font-size: 16px;
+                        }
+                    }
+                    .user-link {
+                        display: block;
+                        text-align: right;
+                        cursor: pointer;
+                        color: $orange-red;
+                        font-weight: bold;
+                        margin-top: 16px;
+                    }
+                }
+            }
+            .user-container:hover {
+                background: transparent;
+                .user-img {
+                    filter: none;
+                }
+            }
+        }
+    } 
+}
+.main-content::-webkit-scrollbar {
+    width: 10px;
+}
+.main-content::-webkit-scrollbar-track {
+    background: $light-grey;
+}
+.main-content::-webkit-scrollbar-thumb {
+    background: $grey;
+    border-radius: 10px;
+}

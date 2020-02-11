@@ -1,0 +1,49 @@
+<div class="container main-container">
+    <div class="main-content">
+        <form (submit)="onSubmit()" class="search-form" [formGroup]="userForm">
+            <div class="row search-bar">
+                <div class="col-4 input-field">
+                    <input [(ngModel)]="userName" type="text" class="form-control search" name="username"
+                        placeholder="&#xF002;  {{ 'search-profile' | translate }}" formControlName="userName">
+                </div>
+                <div class="col-3 button-zone">
+                    <button type="submit" class="btn search-button">{{ 'search' | translate }}</button>
+                </div>
+            </div>
+        </form>
+        <div class="row">
+            <div class="col-3">
+                <h1 class="profile-title">{{ 'profile' | translate }}</h1>
+            </div>
+        </div>
+        <div class="row users" *ngIf="userList && userList !== 'undefined'">
+            <div class="col-3" *ngFor="let user of userList">
+                <div class="user-container">
+                    <img [src]="user.avatar_url" class="user-img">
+                    <div class="text-zone">
+                        <div class="user-info">
+                            <h2 class="user-login">{{ user.login }}</h2>
+                            <h3 class="user-id">{{ 'id' | translate }} {{ user.id }}</h3>
+                        </div>
+                        <a (click)="onUserClicked(user.login)" class="user-link" [routerLink]="['/user-detail', user.login]">
+                            {{ 'full-profile' | translate }}
+                            <i class="fas fa-arrow-right"></i>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="row users" *ngIf="!userList || userList === 'undefined'">
+            <div class="col-3">
+                <div class="user-container">
+                    <img [src]="noUserURL" class="user-img">
+                    <div class="text-zone">
+                        <div class="user-info">
+                            <h2 class="user-login">{{'no-users' | translate }}</h2>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
