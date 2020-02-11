@@ -7,7 +7,7 @@ import { TranslateService } from '@ngx-translate/core';
   styleUrls: ['./app.component.scss']
 })
 export class AppComponent {
-  title = 'angular-ngrx';
+  title = 'Dixper Front Test';
 
   constructor(private translate: TranslateService) {
     this.translate.setDefaultLang('en');
