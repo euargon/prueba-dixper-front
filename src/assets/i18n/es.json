@@ -1,0 +1,22 @@
+{
+    "created": "Creado el ",
+    "error-messages": {
+        "details": "Error tratando de obtener los detalles de usuario",
+        "points": "Error: usuario con menos de 30 puntos",
+        "repos": "Error tratando de obtener los repositorios de usuario",
+        "search": "Error tratando de obtener usuarios",
+        "search-limit": "Error: el texto de búsqueda debe tener, al menos, 3 caracteres"
+    },
+    "followers": "Seguidores: ",
+    "following": "Siguiendo: ",
+    "forks": "Forks",
+    "full-profile": "Perfil completo",
+    "id": "id: ",
+    "issues": "Incidencias abiertas",
+    "no-users": "No se encontraron usuarios",
+    "ok": "Aceptar",
+    "profile": "Listado de perfiles",
+    "search": "Buscar",
+    "search-profile": "Buscar perfil...",  
+    "size": "Tamaño"
+}

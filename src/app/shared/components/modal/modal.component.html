@@ -1,0 +1,9 @@
+<div id="alertModal" class="modal">
+    <div class="modal-content">
+        <i class="fa fa-times close-icon" (click)="closeModal()"></i>
+        <div class="text-section">
+            {{ message }}
+        </div>
+        <button class="btn btn-primary" (click)="closeModal()">{{ 'ok' | translate }}</button>
+    </div>
+</div>

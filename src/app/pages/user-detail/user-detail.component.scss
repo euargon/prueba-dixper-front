@@ -1,0 +1,129 @@
+@import 'src/app/themes/variables.scss';
+.main-container {
+    margin-top: 64px;
+    padding: 8px;
+    min-height: 300px;
+    max-height: 500px;
+    border-radius: 6px;
+    box-shadow: 0px 0px 30px 12px rgba(204,204,204,0.89);
+    overflow: hidden;
+    .main-content {
+        padding: 8px;
+        min-height: 284px;
+        max-height: 484px;
+        overflow-y: auto;
+        overflow-x: hidden;
+
+        .user-info {
+            display: flex;
+            align-items: center;
+            .back-button {
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                width: 30px;
+                height: 30px;
+                background: $light-grey;
+                color: $black;
+                border-radius: 4px;
+            }
+            .login {
+                font-size: 32px;
+            }
+            .repos-summary {
+                display: flex;
+                justify-content: space-between;
+            }
+            .repo-col {
+                display: flex;
+                align-items: center;
+                .number {
+                    font-size: 32px;
+                }
+                .text {
+                    margin-left: 4px;
+                    font-size: 24px;
+                    color: $dark-grey;
+                }
+            }
+        }
+
+        .user-repos {
+            margin-top: 8px;
+            .user-personal {
+                .user-img {
+                    max-width: 100%;
+                    border-radius: 6px;
+                }
+
+                .user-bio {
+                    margin-top: 8px;
+                    font-weight: bold;
+                }
+
+                .user-info-block {
+                    color: $dark-grey;
+                    font-weight: 500;
+                }
+            }
+            .repositories {
+                .repo-info {
+                    background: $light-grey;
+                    border-radius: 6px;
+                    margin: 0 4px 8px 4px;
+                    .privacity {
+                        max-width: 20px;
+                        display: flex;
+                        justify-content: center;
+                        align-items: center;
+                        text-transform: uppercase;
+                        font-weight: bold;
+                        color: $white;
+                        border-top-left-radius: 6px;
+                        border-bottom-left-radius: 6px;
+
+                        &.private {
+                            background: $soft-red;
+                        }
+                        &.public {
+                            background: $neon-green;
+                        }
+                        .report-type {
+                            font-size: 14px;
+                            transform: rotate(270deg);
+                        }
+                    }
+                    .name-date {
+                        display: flex;
+                        flex-direction: column;
+                        justify-content: center;
+                        padding: 8px;
+                        .name {
+                            margin: 0;
+                            font-size: 24px;
+                        }
+                        .date {
+                            margin: 0;
+                            color: $dark-grey;
+                            font-weight: 500;
+                        }
+                    }
+                    .extra-info {
+                        display: flex;
+                        align-items: center;
+                    }
+                }
+            }
+        }
+    }
+}
+.main-content::-webkit-scrollbar {
+    width: 10px;
+}
+.main-content::-webkit-scrollbar-track {
+    background: $light-grey;
+}
+.main-content::-webkit-scrollbar-thumb {
+    background: $grey;
+    border-radius: 10px;
+}

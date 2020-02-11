@@ -1,0 +1,52 @@
+<div class="container main-container">
+    <div class="main-content">
+        <div class="row user-info">
+            <div class="col-1">
+                <a class="back-button" [routerLink]="['/']">
+                    <i class="fas fa-arrow-left"></i>
+                </a>
+            </div>
+            <div class="col-5">
+                <h1 class="login">{{ user?.login }}</h1>
+            </div>
+            <div class="col-6 repos-summary">
+                <div class="repo-col">
+                    <h2 class="number">{{ repoSummary?.openIssues }}</h2>
+                    <h3 class="text">{{ 'issues' | translate }}</h3>
+                </div>
+                <div class="repo-col">
+                    <h2 class="number">{{ repoSummary?.size }}</h2>
+                    <h3 class="text">{{ 'size' | translate }}</h3>
+                </div>
+                <div class="repo-col">
+                    <h2 class="number">{{ repoSummary?.forks }}</h2>
+                    <h3 class="text">{{ 'forks' | translate }}</h3>
+                </div>
+            </div>
+        </div>
+        <div class="row user-repos">
+            <div class="col-3 user-personal">
+                <img [src]="user?.avatar_url" class="user-img">
+                <p class="user-bio">{{ user?.bio }}</p>
+                <div class="user-info-block">
+                    <div class="user-info">{{ user?.location }}</div>
+                    <div class="user-info">{{ 'followers' | translate }} {{ user?.followers }}</div>
+                    <div class="user-info">{{ 'following' | translate }} {{ user?.following }}</div>
+                </div>
+            </div>
+            <div class="col-9 repositories">
+                <div *ngFor="let repo of userRepos" class="row repo-info">
+                    <div class="col-1 privacity" [ngClass]="setRepoType(repo.private)">
+                        <div class="report-type">{{ setRepoType(repo.private) }}</div>
+                    </div>
+                    <div class="col-7 name-date">
+                        <h1 class="name">{{ repo?.name }}</h1>
+                        <p class="date">{{ 'created' | translate }} {{ repo?.created_at | date: 'dd-MM-yyyy' }}</p>
+                    </div>
+                    <div class="col-2 extra-info">{{ 'size' | translate | lowercase}}: {{ repo?.size }}</div>
+                    <div class="col-2 extra-info">{{ 'forks' | translate | lowercase}}: {{ repo?.forks }}</div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
